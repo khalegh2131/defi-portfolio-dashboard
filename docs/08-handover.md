@@ -162,3 +162,15 @@ git push --force-with-lease origin main:defi-portfolio-dashboard
 git remote add origin https://github.com/<owner>/<repo>.git
 git push -u origin main:<branch>
 ```
+
+### ۱۰.۱ انتقال به مخزن اختصاصی (انجام شد)
+
+| مورد | مقدار |
+|------|--------|
+| مخزن نهایی | `khalegh2131/defi-portfolio-dashboard` (مخزن اختصاصی، ساختهٔ کارفرما) |
+| شاخه | `main` |
+| کامیت | `3a623ef` |
+| فایل‌های ردیابی‌شده | ۱۷۰ |
+| مخزن قبلی | شاخهٔ `defi-portfolio-dashboard` در `On-Chain-Signal-Dashboard` به‌عنوان نسخهٔ موقت باقی است |
+
+نکتهٔ عملیاتی: اولین پوش روی این مخزن با خطای `HTTP 408` نیمه‌کاره ماند (قطعی اینترنت). پوش دوم پس از تنظیم `http.postBuffer`، `http.lowSpeedLimit` و `http.lowSpeedTime` کامل شد. در صورت تکرار قطعی، همان تنظیم‌ها راه‌حل است.
